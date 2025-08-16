@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple CRM</h1>
+    <div class="customer-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone">
+        <button id="add-customer">Add Customer</button>
+    </div>
+    <table id="customer-table">
+        <thead>
+            <tr><th>Name</th><th>Email</th><th>Phone</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <template id="row-template">
+        <tr>
+            <td class="cust-name"></td>
+            <td class="cust-email"></td>
+            <td class="cust-phone"></td>
+            <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </td>
+        </tr>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
